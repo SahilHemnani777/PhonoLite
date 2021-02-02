@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "134730398879",
+    "project_id": "phonolite-f1922",
+    "storage_bucket": "phonolite-f1922.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134730398879:android:0f5b0f84debdc08a60f6aa",
+        "android_client_info": {
+          "package_name": "com.example.phonolite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134730398879-cs7dula8r3qr1em4rc96nnpi27es05o6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8TwAC7BnsBXtGoSNe54dzVvJjAq7SEVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134730398879-cs7dula8r3qr1em4rc96nnpi27es05o6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
