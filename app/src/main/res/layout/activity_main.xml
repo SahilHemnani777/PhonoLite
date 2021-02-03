@@ -7,96 +7,15 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="216dp"
-        android:layout_height="241dp"
+        android:id="@+id/btnListen"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38"
-        app:srcCompat="@drawable/a" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="153dp"
-        android:layout_height="125dp"
-        android:layout_marginBottom="172dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView6"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:srcCompat="@drawable/ashoka_tree" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="106dp"
-        android:layout_height="125dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:layout_constraintVertical_bias="0.089"
-        app:srcCompat="@drawable/apple" />
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="182dp"
-        android:layout_height="133dp"
-        android:layout_marginBottom="36dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/airplane" />
-
-    <SeekBar
-        android:id="@+id/seekBarPitch"
-        android:layout_width="137dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
-
-    <SeekBar
-        android:id="@+id/seekBarSpeed"
-        android:layout_width="137dp"
-        android:layout_height="24dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBarPitch" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="Pitch"
-        app:layout_constraintEnd_toStartOf="@+id/seekBarPitch"
-        app:layout_constraintHorizontal_bias="0.79"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/seekBarPitch" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="64dp"
-        android:layout_height="25dp"
-        android:text="Speed"
-        app:layout_constraintBottom_toBottomOf="@+id/seekBarSpeed"
-        app:layout_constraintEnd_toStartOf="@+id/seekBarSpeed"
-        app:layout_constraintHorizontal_bias="0.813"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/btnListen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Listen"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seekBarSpeed" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/aaaaa" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

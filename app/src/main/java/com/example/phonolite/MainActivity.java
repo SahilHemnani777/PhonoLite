@@ -4,12 +4,8 @@ import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.LinearInterpolator;
-import android.view.animation.RotateAnimation;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.SeekBar;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,27 +15,20 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
     private TextToSpeech mTTS;
-    private SeekBar sbPitch;
-    private SeekBar sbSpeed;
+//    private SeekBar sbPitch;
+//    private SeekBar sbSpeed;
 
     private ImageView A;
-    private Button btnListen;
+    private ImageView btnListen;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toast.makeText(this, "Click Anywhere to listen", Toast.LENGTH_SHORT).show();
 
-        sbPitch = findViewById(R.id.seekBarPitch);
-        sbSpeed = findViewById(R.id.seekBarSpeed);
+//        sbPitch = findViewById(R.id.seekBarPitch);
+//        sbSpeed = findViewById(R.id.seekBarSpeed);
         btnListen = findViewById(R.id.btnListen);
-        A= findViewById(R.id.imageView4);
-
-        RotateAnimation anim = new RotateAnimation(0f, 350f, 15f, 15f);
-        anim.setInterpolator(new LinearInterpolator());
-        anim.setRepeatCount(Animation.RELATIVE_TO_PARENT);
-        anim.setDuration(500);
-
-        A.setAnimation(anim);
 
 
         mTTS = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
@@ -67,13 +56,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void speak() {
-        String text = "A. for Apple, A. for Ashoka, A. for Airplane";
-        float pitch = (float) sbPitch.getProgress() / 50;
-        if (pitch < 0.1) pitch = 0.1f;
-        float speed = (float) sbSpeed.getProgress() / 50;
-        if (speed < 0.1) speed = 0.1f;
-        mTTS.setPitch(pitch);
-        mTTS.setSpeechRate(speed);
+        String text = "A. for Apple, A. for Ashoka, A. for Airplane.......... An ant is standing near Ashoka tree and look at the apple" +
+                "...while, an airplane is flying high in the sky";
+//        float pitch = (float) sbPitch.getProgress() / 50;
+//        Log.d(TAG, "speak:"+ pitch);
+//        if (pitch < 0.1) pitch = 0.1f;
+//        float speed = (float) sbSpeed.getProgress() / 50;
+//        Log.d(TAG, "speak: "+speed);
+//        if (speed < 0.1) speed = 0.1f;
+        mTTS.setPitch(0.8f);
+        mTTS.setSpeechRate(0.8f);
         mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null);
     }
 }
