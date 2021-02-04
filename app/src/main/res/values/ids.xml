@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="profile_tv" type="id" />
+    <item name="profile_img_iv" type="id" />
+    <item name="displayname_tv" type="id" />
+    <item name="email_tv" type="id" />
+    <item name="edit_profile_tv" type="id" />
+    <item name="signout_btn" type="id" />
+</resources>

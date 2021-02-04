@@ -1,12 +1,17 @@
 package com.example.phonolite;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Locale;
@@ -25,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toast.makeText(this, "Click Anywhere to listen", Toast.LENGTH_SHORT).show();
+
+
 
 //        sbPitch = findViewById(R.id.seekBarPitch);
 //        sbSpeed = findViewById(R.id.seekBarSpeed);
@@ -55,6 +62,23 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menuprofile, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.profile:
+                startActivity(new Intent(MainActivity.this, ProfileActivity.class));
+        }
+        return true;
+    }
+
     private void speak() {
         String text = "A. for Apple, A. for Ashoka, A. for Airplane.......... An ant is standing near Ashoka tree and look at the apple" +
                 "...while, an airplane is flying high in the sky";
